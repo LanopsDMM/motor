@@ -1,0 +1,154 @@
+# LANOPS · portals.yml para Gipuzkoa
+# Generado desde https://github.com/LanopsDMM/lanops/blob/main/data/empresas.csv (07-oct-2026, 24 empresas).
+# Uso: cp templates/portals.gipuzkoa.yml portals.yml   (portals.yml es personal y no se sube: está en .gitignore)
+# Cada careers_url se abrió el 07-oct; qué se vio en cada una: lanops/data/empresas-notas.md.
+# enabled: false = la empresa no publica lista de ofertas (solo formulario de CV) o la URL no se pudo comprobar.
+# Las que dependen de un ATS con JavaScript (TalentClue, SuccessFactors, Workday) se leen con Playwright (método por defecto).
+
+title_filter:
+  # Sin lista positiva = no se filtra por título (LANOPS es para cualquier perfil).
+  # Añade aquí las palabras de tu puesto objetivo si quieres acotar, p. ej. "Ingeniero", "Técnico", "Investigador".
+  positive: []
+  negative: []
+
+location_filter:
+  # Solo ofertas en Gipuzkoa. Una oferta sin ubicación pasa (no se penaliza el dato que falta).
+  allow:
+    - "Gipuzkoa"
+    - "Guipúzcoa"
+    - "Guipuzcoa"
+    - "San Sebastián"
+    - "Donostia"
+    - "Mondragón"
+    - "Aduna"
+    - "Aretxabaleta"
+    - "Arrasate"
+    - "Beasain"
+    - "Elgoibar"
+    - "Eskoriatza"
+    - "Hernani"
+    - "Irun"
+    - "Ordizia"
+    - "Ormaiztegi"
+
+tracked_companies:
+
+  - name: "Vicomtech"
+    careers_url: https://www.vicomtech.org/es/ofertas-de-trabajo
+    notes: "Donostia · i+d"
+    enabled: true
+
+  - name: "CIC nanoGUNE"
+    careers_url: https://www.nanogune.eu/es/unete
+    notes: "Donostia · i+d"
+    enabled: true
+
+  - name: "Ceit"
+    careers_url: https://ceit.es/en/join-ceit/opportunities/ceit-ik4-opportunities
+    notes: "Donostia · i+d · TalentClue"
+    enabled: true
+
+  - name: "Tecnalia"
+    careers_url: https://www.tecnalia.com/ofertas-de-empleo
+    notes: "Donostia · i+d · TalentClue"
+    enabled: true
+
+  - name: "Ikerlan"
+    careers_url: https://www.ikerlan.es
+    notes: "Arrasate · i+d · URL de empleo no comprobada; sus ofertas salen en el portal de MONDRAGON"
+    enabled: false
+
+  - name: "Orona"
+    careers_url: https://jobs1.orona-group.com/
+    notes: "Hernani · industria · SAP SuccessFactors"
+    enabled: true
+
+  - name: "CAF"
+    careers_url: https://jobs.caf.net/
+    notes: "Beasain · industria · SAP SuccessFactors"
+    enabled: true
+
+  - name: "Irizar"
+    careers_url: https://www.irizar.com/contacto
+    notes: "Ormaiztegi · industria · solo formulario de CV, sin lista de ofertas"
+    enabled: false
+
+  - name: "Fagor Arrasate"
+    careers_url: https://fagorarrasate.com/talent/job-offers/
+    notes: "Arrasate · industria · TalentClue"
+    enabled: true
+
+  - name: "Fagor Ederlan"
+    careers_url: https://www.fagorederlan.com/es/ofertas-trabajo
+    notes: "Eskoriatza · industria · TalentClue"
+    enabled: true
+
+  - name: "Danobatgroup"
+    careers_url: https://www.danobatgroup.com/es/empleo
+    notes: "Elgoibar · industria · solo formulario de CV, sin lista de ofertas"
+    enabled: false
+
+  - name: "Orkli"
+    careers_url: https://www.orkli.com/es/trabaja-con-nosotros
+    notes: "Ordizia · industria · solo formulario de CV, sin lista de ofertas"
+    enabled: false
+
+  - name: "Ingeteam Indar Machines"
+    careers_url: https://ingeteam.teamtailor.com/es
+    notes: "Beasain · industria · Teamtailor"
+    enabled: true
+
+  - name: "Copreci"
+    careers_url: https://www.copreci.com/talento
+    notes: "Aretxabaleta · industria · TalentClue"
+    enabled: true
+
+  - name: "Ikusi"
+    careers_url: https://ikusi.wd3.myworkdayjobs.com/es/Vacantes_Sitio_Externo
+    notes: "Donostia · tecnologia · Workday"
+    enabled: true
+
+  - name: "LKS Next"
+    careers_url: https://www.lksnext.com/es/haz-carrera/ofertas-de-trabajo-lks-next/
+    notes: "Arrasate · tecnologia · TalentClue"
+    enabled: true
+
+  - name: "Laboral Kutxa"
+    careers_url: https://talentua.laboralkutxa.com/
+    notes: "Arrasate · finanzas · SAP SuccessFactors"
+    enabled: true
+
+  - name: "Mondragon Unibertsitatea"
+    careers_url: https://www.mondragon.edu/es/trabaja-nosotros-oferta
+    notes: "Arrasate · educacion"
+    enabled: true
+
+  - name: "MONDRAGON Corporación (portal de empleo de las cooperativas)"
+    careers_url: https://www.mondragon-corporation.com/people/oportunidades-profesionales/
+    notes: "Arrasate · industria"
+    enabled: true
+
+  - name: "Gureak"
+    careers_url: http://www.gureakitinerary.com/es/trabaja-con-nosotros?web=corporativa
+    notes: "Donostia · social"
+    enabled: true
+
+  - name: "Matia Fundazioa"
+    careers_url: https://empleo.matia.eus/
+    notes: "Donostia · salud · Teamtailor"
+    enabled: true
+
+  - name: "Ausolan"
+    careers_url: https://ofertas.ausolan.com/jobs
+    notes: "Arrasate · hosteleria"
+    enabled: true
+
+  - name: "BM Supermercados (Grupo Uvesco)"
+    careers_url: https://talento.bmsupermercados.es
+    notes: "Irun · comercio · Teamtailor"
+    enabled: true
+
+  - name: "Elkar"
+    careers_url: https://www.elkar.eus/es/trabaja-con-nosotros
+    notes: "Aduna · comercio · solo formulario de CV, sin lista de ofertas"
+    enabled: false

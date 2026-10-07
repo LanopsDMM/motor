@@ -23,10 +23,11 @@ git clone https://github.com/LanopsDMM/motor.git lanops-local
 cd lanops-local
 npm install
 npm run doctor          # comprueba que todo está instalado
+cp templates/portals.gipuzkoa.yml portals.yml  # 24 empresas de Gipuzkoa con página de empleo
 ```
 1. Crea `cv.md` en la carpeta con tu CV en texto. Sin DNI, fecha de nacimiento ni dirección: no hacen falta.
 2. Abre tu asistente en esa carpeta (por ejemplo, `claude`) y pídele en castellano que adapte el sistema a ti: «Actualiza mi perfil con este CV», «Busco puestos de recién graduado en Gipuzkoa».
-3. Para leer empresas de Gipuzkoa: pídele «Añade a `portals.yml` las empresas de este CSV» con la lista de LANOPS: https://github.com/LanopsDMM/lanops/blob/main/data/empresas.csv
+3. Para revisar las páginas de empleo de las empresas de Gipuzkoa que ya trae `portals.yml`, pídele «Haz un escaneo» (modo `scan`). La lista sale de https://github.com/LanopsDMM/lanops/blob/main/data/empresas.csv; puedes añadir o quitar empresas pidiéndoselo al asistente.
 4. Pega el enlace o el texto de una oferta y te devuelve la evaluación. Las ofertas de Lanbide (Open Data Euskadi, CC BY) también sirven.
 
 La IA evalúa; tú decides. Nada se envía sin tu clic.
